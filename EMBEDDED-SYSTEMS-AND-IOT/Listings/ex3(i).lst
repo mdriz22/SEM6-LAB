@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  EX3_I_                                                               02/26/2024 21:57:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ex3(i).obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex3(i).asm SET(SMALL) DEBUG PRINT(.\Listings\ex3(i).lst) OBJECT(.\Objec
+                      ts\ex3(i).obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 7414              1     mov A, #20D
+0002 2402              2     add a, #2D
+0004 F9                3     mov r1,a
+0005 741E              4     mov a, #30D
+0007 2414              5     add a,#20D
+0009 99                6     subb a,r1
+000A FA                7     mov r2,a
+                       8     end
+A51 MACRO ASSEMBLER  EX3_I_                                                               02/26/2024 21:57:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

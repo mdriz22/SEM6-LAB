@@ -1,0 +1,45 @@
+A51 MACRO ASSEMBLER  EX1                                                                  02/19/2024 23:45:14 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ex1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ex1.asm SET(SMALL) DEBUG PRINT(.\Listings\ex1.lst) OBJECT(.\Objects\ex1
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 7C05              2     mov r4 ,#05h
+0002 7590FF            3     here: mov p1,#11111111b
+0005 110E              4     acall delay
+0007 759000            5     mov p1,#00000000b
+000A 110E              6     acall delay
+000C 80F4              7     sjmp here
+000E 7864              8     delay:mov r0,#100
+0010 79C8              9     back2:mov r1,#200
+0012 7AC8             10     back1: mov r2,#200
+0014 DAFE             11     again: djnz r2,again
+0016 D9FA             12     djnz r1,back1
+0018 D8F6             13     djnz r0, back2
+001A 22               14     ret
+                      15     end
+A51 MACRO ASSEMBLER  EX1                                                                  02/19/2024 23:45:14 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0014H   A   
+BACK1. . . . . . .  C ADDR   0012H   A   
+BACK2. . . . . . .  C ADDR   0010H   A   
+DELAY. . . . . . .  C ADDR   000EH   A   
+HERE . . . . . . .  C ADDR   0002H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
